@@ -9,25 +9,26 @@
 
     <com.wq.android.lib.verticaltablayout.VerticalTabLayout
         android:id="@+id/tab_layout_2"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="190dp"
+        android:layout_marginLeft="142dp"
         android:background="@android:color/holo_blue_dark"
         app:dividerColor="@android:color/black"
         app:dividerHeight="1px"
         app:dividerPadding="15dp"
         app:tabArrowColor="#cccccc"
         app:tabDrawablePadding="8dp"
-        app:tabHeight="50dp"
+        app:tabHeight="30dp"
         app:tabIndicatorColor="@android:color/holo_green_dark"
         app:tabIndicatorGravity="fill"
         app:tabSelectedTextColor="@android:color/white"
         app:tabTextColor="#555555"
+        app:tabTextSize="10dp"
         app:tabViewGravity="center"/>
 
     <com.wq.android.lib.verticaltablayout.VerticalTabLayout
         android:id="@+id/tab_layout_1"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="match_parent"
         android:background="#cccccc"
         app:dividerColor="@android:color/holo_blue_dark"
@@ -37,29 +38,31 @@
         app:tabArrowGravity="right"
         app:tabArrowType="outer"
         app:tabDrawablePadding="8dp"
-        app:tabHeight="50dp"
+        app:tabHeight="30dp"
         app:tabIndicatorColor="@android:color/holo_orange_dark"
         app:tabIndicatorGravity="fill"
         app:tabIndicatorWidth="15dp"
         app:tabPaddingLeft="20dp"
         app:tabSelectedTextColor="@android:color/white"
         app:tabTextColor="#555555"
+        app:tabTextSize="10dp"
         app:tabViewGravity="left"/>
 
     <com.wq.android.lib.verticaltablayout.VerticalTabLayout
         android:id="@+id/tab_layout_3"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="390dp"
+        android:layout_marginLeft="292dp"
         android:background="#cccccc"
         app:tabDrawablePadding="8dp"
-        app:tabHeight="50dp"
+        app:tabHeight="30dp"
         app:tabIndicatorColor="@android:color/holo_orange_dark"
         app:tabIndicatorGravity="right"
         app:tabIndicatorWidth="10dp"
         app:tabPaddingRight="20dp"
         app:tabSelectedTextColor="@android:color/holo_red_dark"
         app:tabTextColor="#555555"
+        app:tabTextSize="10dp"
         app:tabViewGravity="right"/>
 
 
