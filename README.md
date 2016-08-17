@@ -6,7 +6,7 @@
 
 ```xml
    <com.wq.android.lib.verticaltablayout.VerticalTabLayout
-        android:id="@+id/tab_layout_1"
+        android:id="@+id/tab_layout"
         android:layout_width="150dp"
         android:layout_height="match_parent"
         android:background="#cccccc"
@@ -28,8 +28,8 @@
         app:tabViewGravity="left"/>
 ```
 ```java
-VerticalTabLayout vTabLayout = (VerticalTabLayout) findViewById(R.id.tab_layout_1);
-vTabLayout.addTab(vTabLayout.newTab().setText("TEST " + i).setDrawable(R.drawable.ic_selector));
+VerticalTabLayout vTabLayout = (VerticalTabLayout) findViewById(R.id.tab_layout);
+vTabLayout.addTab(vTabLayout.newTab().setText("TEST").setDrawable(R.drawable.ic_selector));
 vTabLayout.setOnTabSelectedListener(new VerticalTabLayout.OnTabSelectedAdapter() {
    @Override
    public void onTabSelected(VerticalTabLayout.Tab tab, int position) {
