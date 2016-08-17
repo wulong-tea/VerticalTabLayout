@@ -27,3 +27,13 @@
         app:tabTextSize="10dp"
         app:tabViewGravity="left"/>
 ```
+```java
+VerticalTabLayout vTabLayout = (VerticalTabLayout) findViewById(R.id.tab_layout_1);
+vTabLayout.addTab(vTabLayout.newTab().setText("TEST " + i).setDrawable(R.drawable.ic_selector));
+vTabLayout.setOnTabSelectedListener(new VerticalTabLayout.OnTabSelectedAdapter() {
+   @Override
+   public void onTabSelected(VerticalTabLayout.Tab tab, int position) {
+       Toast.makeText(getApplicationContext(), "onTabSelected: " + position, Toast.LENGTH_SHORT).show();
+   }
+});
+```
