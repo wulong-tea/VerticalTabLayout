@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerticalTabLayout">
+        <attr name="tabIndicatorColor" format="color"/>
+        <attr name="tabIndicatorWidth" format="dimension"/>
+        <attr name="tabIndicatorCorners" format="dimension"/>
+        <attr name="tabIndicatorGravity" format="enum">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+            <enum name="fill" value="119"/>
+        </attr>
+        <attr name="dividerHeight" format="dimension"/>
+        <attr name="dividerPadding" format="dimension"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="tabArrowColor" format="color"/>
+        <attr name="tabArrowGravity" format="enum">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="tabArrowType" format="enum">
+            <enum name="inner" value="1"/>
+            <enum name="outer" value="2"/>
+        </attr>
+        <attr name="tabHeight" format="dimension"/>
+        <attr name="tabTextColor" format="color"/>
+        <attr name="tabSelectedTextColor" format="color"/>
+        <attr name="tabTextAppearance" format="reference"/>
+        <attr name="tabTextSize" format="dimension"/>s
+        <attr name="tabPadding" format="dimension"/>
+        <attr name="tabPaddingLeft" format="dimension"/>
+        <attr name="tabPaddingRight" format="dimension"/>
+        <attr name="tabPaddingTop" format="dimension"/>
+        <attr name="tabPaddingBottom" format="dimension"/>
+        <attr name="tabDrawablePadding" format="dimension"/>
+        <attr name="tabViewGravity" format="enum">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+            <enum name="center" value="17"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TabItem">
+        <attr name="text" format="string"/>
+        <attr name="iconGravity" format="enum">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+            <enum name="bottom" value="80"/>
+            <enum name="top" value="48"/>
+        </attr>
+        <attr name="icon" format="reference"/>
+    </declare-styleable>
+</resources>

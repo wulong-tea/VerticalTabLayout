@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/VerticalTabLayout.iml" filepath="$PROJECT_DIR$/VerticalTabLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/app.iml" filepath="$PROJECT_DIR$/demo/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vertical-tab-layout/vertical-tab-layout.iml" filepath="$PROJECT_DIR$/vertical-tab-layout/vertical-tab-layout.iml" />
+    </modules>
+  </component>
+</project>
