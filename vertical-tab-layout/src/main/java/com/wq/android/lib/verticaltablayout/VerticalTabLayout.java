@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
@@ -45,7 +46,7 @@ public class VerticalTabLayout extends ScrollView implements View.OnClickListene
     private int mIndicatorCorners = 0;
     private int mDividerHeight = 0;
     private int mDividerColor = Color.GRAY;
-    private int mIndicatorGravity = Gravity.RIGHT;
+    private int mIndicatorGravity = Gravity.FILL;
     private int mTabHeight = INVALID_NUM;
     private int mDividerPadding = 0;
     private int mArrowColor = Color.TRANSPARENT;
@@ -135,7 +136,7 @@ public class VerticalTabLayout extends ScrollView implements View.OnClickListene
         mTabPaddingBottom = (int) typedArray.getDimension(R.styleable.VerticalTabLayout_tabPaddingBottom, mTabPaddingBottom);
         mTabGravity = typedArray.getInteger(R.styleable.VerticalTabLayout_tabViewGravity, mTabGravity);
         mArrowType = typedArray.getInteger(R.styleable.VerticalTabLayout_tabArrowType, mArrowType);
-        mTabDrawablePadding = (int) typedArray.getDimension(R.styleable.VerticalTabLayout_tabDrawablePadding, mTabDrawablePadding);
+        mTabDrawablePadding = (int) typedArray.getDimension(R.styleable.VerticalTabLayout_tabIconPadding, mTabDrawablePadding);
         typedArray.recycle();
         initLayout();
     }
@@ -231,7 +232,9 @@ public class VerticalTabLayout extends ScrollView implements View.OnClickListene
         if (mArrowColor != Color.TRANSPARENT) {
             mArrowSize = mTabHeight / 6;
             if (mArrowType == ARROW_TYPE_OUTER) {
-                LayerDrawable d = new LayerDrawable(new Drawable[]{getBackground()});
+                Drawable background = getBackground();
+                background = background == null ? new ColorDrawable() : background;
+                LayerDrawable d = new LayerDrawable(new Drawable[]{background});
                 if (mArrowGravity == Gravity.RIGHT) {
                     d.setLayerInset(0, 0, 0, mArrowSize, 0);
                 } else if (mArrowGravity == Gravity.LEFT) {

@@ -31,7 +31,7 @@
         <attr name="tabPaddingRight" format="dimension"/>
         <attr name="tabPaddingTop" format="dimension"/>
         <attr name="tabPaddingBottom" format="dimension"/>
-        <attr name="tabDrawablePadding" format="dimension"/>
+        <attr name="tabIconPadding" format="dimension"/>
         <attr name="tabViewGravity" format="enum">
             <enum name="left" value="3"/>
             <enum name="right" value="5"/>
