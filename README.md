@@ -29,7 +29,7 @@
 ```
 ```java
 VerticalTabLayout vTabLayout = (VerticalTabLayout) findViewById(R.id.tab_layout);
-vTabLayout.addTab(vTabLayout.newTab().setText("TEST").setDrawable(R.drawable.ic_selector));
+vTabLayout.addTab(vTabLayout.newTab().setText("TEST").setIcon(R.drawable.ic_selector));
 vTabLayout.setOnTabSelectedListener(new VerticalTabLayout.OnTabSelectedAdapter() {
    @Override
    public void onTabSelected(VerticalTabLayout.Tab tab, int position) {
