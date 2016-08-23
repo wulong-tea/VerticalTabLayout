@@ -17,6 +17,8 @@ public class TabItem extends View {
     private Drawable mIcon;
     private String mText;
     private int mIconGravity = Gravity.LEFT;
+    private int mIconWidth;
+    private int mIconHeight;
 
     public TabItem(Context context) {
         super(context);
@@ -47,6 +49,8 @@ public class TabItem extends View {
         mIcon = typedArray.getDrawable(R.styleable.TabItem_icon);
         mText = typedArray.getString(R.styleable.TabItem_text);
         mIconGravity = typedArray.getInt(R.styleable.TabItem_iconGravity, mIconGravity);
+        mIconWidth = (int) typedArray.getDimension(R.styleable.TabItem_iconWidth, 0);
+        mIconHeight = (int) typedArray.getDimension(R.styleable.TabItem_iconHeight, 0);
         typedArray.recycle();
     }
 
@@ -68,6 +72,22 @@ public class TabItem extends View {
 
     public int getIconGravity() {
         return mIconGravity;
+    }
+
+    public int getIconHeight() {
+        return mIconHeight;
+    }
+
+    public void setIconHeight(int mIconHeight) {
+        this.mIconHeight = mIconHeight;
+    }
+
+    public int getIconWidth() {
+        return mIconWidth;
+    }
+
+    public void setIconWidth(int mIconWidth) {
+        this.mIconWidth = mIconWidth;
     }
 
     public void setIconGravity(int mIconGravity) {

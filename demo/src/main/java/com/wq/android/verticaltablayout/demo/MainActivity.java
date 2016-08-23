@@ -17,17 +17,17 @@ public class MainActivity extends AppCompatActivity implements VerticalTabLayout
         LeakCanary.install(getApplication());
         VerticalTabLayout vTabLayout = (VerticalTabLayout) findViewById(R.id.tab_layout_1);
         for (int i = 0; i < 20; i++) {
-            vTabLayout.addTab(vTabLayout.newTab().setText("TEST " + i).setDrawable(R.drawable.ic_selector));
+            vTabLayout.addTab(vTabLayout.newTab().setText("TEST " + i).setIcon(R.drawable.ic_selector));
         }
         vTabLayout.setOnTabSelectedListener(this);
         vTabLayout = (VerticalTabLayout) findViewById(R.id.tab_layout_2);
         for (int i = 0; i < 20; i++) {
-            vTabLayout.addTab(vTabLayout.newTab().setText("TEST " + i).setDrawable(R.drawable.ic_selector));
+            vTabLayout.addTab(vTabLayout.newTab().setText("TEST " + i).setIcon(R.drawable.ic_selector));
         }
         vTabLayout.setOnTabSelectedListener(this);
         vTabLayout = (VerticalTabLayout) findViewById(R.id.tab_layout_3);
         for (int i = 0; i < 20; i++) {
-            vTabLayout.addTab(vTabLayout.newTab().setText("TEST " + i).setDrawable(R.drawable.ic_selector).setDrawableGravity(Gravity.RIGHT));
+            vTabLayout.addTab(vTabLayout.newTab().setText("TEST " + i).setIcon(R.drawable.ic_selector).setIconGravity(Gravity.RIGHT));
         }
         vTabLayout.setOnTabSelectedListener(this);
     }

@@ -341,9 +341,10 @@ public class VerticalTabLayout extends ScrollView implements View.OnClickListene
 
     private void addTabFromItemView(@NonNull TabItem item) {
         Tab tab = newTab();
-        tab.setText(item.getText().toString());
-        tab.setDrawable(item.getIcon());
-        tab.setDrawableGravity(item.getIconGravity());
+        tab.setText(item.getText());
+        tab.setIcon(item.getIcon());
+        tab.setIconGravity(item.getIconGravity());
+        tab.setIconSize(item.getIconWidth(), item.getIconHeight());
         tab.setContentDescription(item.getContentDescription() != null ? item.getContentDescription().toString() : null);
         addTab(tab);
     }
@@ -517,7 +518,7 @@ public class VerticalTabLayout extends ScrollView implements View.OnClickListene
             return drawable;
         }
 
-        public Tab setDrawable(Drawable drawable) {
+        public Tab setIcon(Drawable drawable) {
             this.drawable = drawable;
             return this;
         }
@@ -526,7 +527,7 @@ public class VerticalTabLayout extends ScrollView implements View.OnClickListene
             return drawableRes;
         }
 
-        public Tab setDrawable(int drawableRes) {
+        public Tab setIcon(int drawableRes) {
             this.drawableRes = drawableRes;
             return this;
         }
@@ -535,12 +536,12 @@ public class VerticalTabLayout extends ScrollView implements View.OnClickListene
             return drawableGravity;
         }
 
-        public Tab setDrawableGravity(int drawableGravity) {
+        public Tab setIconGravity(int drawableGravity) {
             this.drawableGravity = drawableGravity;
             return this;
         }
 
-        public Tab setDrawableSize(int drawableWidth, int drawableHeight) {
+        public Tab setIconSize(int drawableWidth, int drawableHeight) {
             this.drawableWidth = drawableWidth;
             this.drawableHeight = drawableHeight;
             return this;
