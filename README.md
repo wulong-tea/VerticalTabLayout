@@ -16,7 +16,7 @@
         app:tabArrowColor="@android:color/holo_orange_dark"
         app:tabArrowGravity="right"
         app:tabArrowType="outer"
-        app:tabDrawablePadding="8dp"
+        app:tabIconPadding="8dp"
         app:tabHeight="30dp"
         app:tabIndicatorColor="@android:color/holo_orange_dark"
         app:tabIndicatorGravity="fill"
