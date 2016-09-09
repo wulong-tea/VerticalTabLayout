@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/white"
-                android:orientation="horizontal">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
 
     <com.wq.android.lib.verticaltablayout.VerticalTabLayout
         android:id="@+id/tab_layout_2"
@@ -17,14 +16,14 @@
         app:dividerHeight="1px"
         app:dividerPadding="15dp"
         app:tabArrowColor="#cccccc"
-        app:tabIconPadding="8dp"
         app:tabHeight="30dp"
+        app:tabIconPadding="8dp"
         app:tabIndicatorColor="@android:color/holo_green_dark"
         app:tabIndicatorGravity="fill"
         app:tabSelectedTextColor="@android:color/white"
         app:tabTextColor="#555555"
         app:tabTextSize="10dp"
-        app:tabViewGravity="center"/>
+        app:tabViewGravity="center" />
 
     <com.wq.android.lib.verticaltablayout.VerticalTabLayout
         android:id="@+id/tab_layout_1"
@@ -37,8 +36,8 @@
         app:tabArrowColor="@android:color/holo_orange_dark"
         app:tabArrowGravity="right"
         app:tabArrowType="outer"
-        app:tabIconPadding="8dp"
         app:tabHeight="30dp"
+        app:tabIconPadding="8dp"
         app:tabIndicatorColor="@android:color/holo_orange_dark"
         app:tabIndicatorGravity="fill"
         app:tabIndicatorWidth="15dp"
@@ -46,16 +45,16 @@
         app:tabSelectedTextColor="@android:color/white"
         app:tabTextColor="#555555"
         app:tabTextSize="10dp"
-        app:tabViewGravity="left"/>
+        app:tabViewGravity="left" />
 
     <com.wq.android.lib.verticaltablayout.VerticalTabLayout
         android:id="@+id/tab_layout_3"
         android:layout_width="150dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="292dp"
+        android:layout_toRightOf="@id/tab_layout_2"
         android:background="#cccccc"
-        app:tabIconPadding="8dp"
         app:tabHeight="30dp"
+        app:tabIconPadding="8dp"
         app:tabIndicatorColor="@android:color/holo_orange_dark"
         app:tabIndicatorGravity="right"
         app:tabIndicatorWidth="10dp"
@@ -63,7 +62,23 @@
         app:tabSelectedTextColor="@android:color/holo_red_dark"
         app:tabTextColor="#555555"
         app:tabTextSize="10dp"
-        app:tabViewGravity="right"/>
+        app:tabViewGravity="right" />
 
+    <com.wq.android.lib.verticaltablayout.VerticalTabLayout
+        android:id="@+id/tab_layout_4"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/tab_layout_3"
+        android:background="@android:color/holo_green_light"
+        app:tabHeight="30dp"
+        app:tabIconPadding="8dp"
+        app:tabIndicatorColor="@android:color/holo_blue_light"
+        app:tabIndicatorCorners="15dp"
+        app:tabIndicatorGravity="fill"
+        app:tabPaddingRight="20dp"
+        app:tabSelectedTextColor="@android:color/holo_red_dark"
+        app:tabTextColor="#555555"
+        app:tabTextSize="10dp"
+        app:tabViewGravity="right" />
 
 </RelativeLayout>
